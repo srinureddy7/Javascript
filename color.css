@@ -1,0 +1,18 @@
+body{
+    background: rgb(153, 185, 184);
+}
+#header{
+    color: #fff;
+}
+.abc{
+    background: rgb(17, 4, 4);
+}
+.xyz{
+    background: rgb(0, 238, 255);
+}
+#menu{
+    background: crimson;
+}
+#menu a{
+    background: rgb(252, 252, 252);
+}

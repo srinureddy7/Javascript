@@ -1,0 +1,11 @@
+*{
+    text-align: center;
+    margin: 1rem;
+    padding: 0%;
+}
+#test{
+    height: 50vh;
+    width: 75%;
+    background: rgb(23, 211, 202);
+    margin: auto;
+}

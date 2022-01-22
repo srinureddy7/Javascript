@@ -1,0 +1,10 @@
+h1{
+    color: red;
+    text-align: center;
+}
+#test{
+    height: 50vh;
+    width: 75%;
+    background: rgb(23, 211, 202);
+    margin: auto;
+}

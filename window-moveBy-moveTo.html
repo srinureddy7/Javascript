@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window moveBy & moveTo</title>
+    <style>
+        h2{
+            text-align: center;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Window moveBy and moveTo</h2>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="windowMove()">Move Window</button>
+    <script>
+        var myWindow;
+        function openWindow(){
+            myWindow = window.open("","","width=500px,height=200px");
+            myWindow.document.write("<p>This is my Window.</p>")
+        }
+        function windowMove(){
+         myWindow.moveTo(100,100);
+        }
+        //resizeBy && resizeTo
+
+
+    </script>
+</body>
+</html>

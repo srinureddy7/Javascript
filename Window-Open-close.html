@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Open And Close</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(17, 23, 107);
+        }
+    </style>
+</head>
+<body>
+    <h2>Syntax : window.open(URL,name, specs)</h2>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">Open Window</button>
+    
+    <script>
+        // function openWindow(){
+        //     window.open();//creates a new window in the browser.
+    
+        function openWindow(){
+            //window.open("http://www.facebook.com","_parent");//_blank,_parent these are the other methods
+            window.open("http://www.facebook.com","","width = 500px,height = 200px"); //it will open a new window with specific size.
+            
+        }
+        function closeWindow{
+            window.close();//this function will help to close the window.
+        }
+    </script>
+</body>
+</html>

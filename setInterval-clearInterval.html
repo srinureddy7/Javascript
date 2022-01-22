@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>set-clear Interval</title>
+    <style>
+      h3,
+      p {
+        text-align: center;
+        background: lime;
+      }
+      #test {
+        width: 150px;
+        height: 150px;
+        background: red;
+      }
+      #test2{
+        width: 150px;
+        height: 150px;
+        background: rgb(68, 0, 255);
+      }
+      #test3{
+        width: 150px;
+        height: 150px;
+        background: rgb(232, 236, 3);
+      }
+      #test4{
+        width: 150px;
+        height: 150px;
+        background: rgb(88, 236, 3);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Set Interval and clear Interval</h3>
+    <p>it is used to make animations in DOM</p>
+    <!--
+        syntax : 
+        setInterval(functionName,miliseconds);
+        clearInterval();//with this function we can stop animations.
+    -->
+
+    <div id="test4"></div><br>
+    <div id="test"></div><br>
+    <div id="test2"></div><br>
+    <button onclick="stopAnimation()">Stop Animation</button><br>
+    <div id="test3"></div>
+    <script>
+      // var a = 0;
+      // setInterval(Anim, 1000);
+      // function Anim(){
+      //     a = a+10;
+      //     console.log(a);
+
+      // var a = 0;
+      // setInterval(Anim, 1000);
+      // function Anim() {
+      //   a = a + 10;
+      //   var target = document.getElementById("test");
+      //   target.style.marginLeft = a + 'px';
+
+      var b = 0;
+      var id = setInterval(Anim, 500);
+      function Anim() {
+        b = b + 10;
+        if (b == 200) {
+          clearInterval(id); //here the animation will be stopped at 200.
+        } else {
+        var target = document.getElementById("test");
+        target.style.marginLeft = b + 'px';
+        }
+      }
+    </script>
+    <script src="./js/js-animation.js"></script>
+  </body>
+</html>
